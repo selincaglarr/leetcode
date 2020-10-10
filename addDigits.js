@@ -19,3 +19,8 @@ let newnum= num.toString().split("").map(x=>Number(x)).reduce((x,y)=>x+y)
 }
  toArray(num)
 };
+
+
+var addDigits = function(num) {
+  return num < 10 ? num : num % 9 === 0 ? 9 : num % 9;  
+};
